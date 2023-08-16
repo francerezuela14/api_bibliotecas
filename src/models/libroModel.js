@@ -1,7 +1,4 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
-
-console.log("Valor de MONGO_DB:", process.env.MONGO_DB);
 
 mongoose.connect(process.env.MONGO_DB, {
   useUnifiedTopology: true,
