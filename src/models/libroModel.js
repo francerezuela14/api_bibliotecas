@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGO_DB, {
+mongoose.connect(process.env.MONGO_URL, {
   useUnifiedTopology: true,
   useNewUrlParser: true,
 });
@@ -13,3 +13,4 @@ const LibroSchema = new mongoose.Schema({
 const Libro = mongoose.model('Libro', LibroSchema);
 
 module.exports = Libro;
+
